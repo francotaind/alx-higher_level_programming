@@ -1,9 +1,7 @@
 #!/usr/bin/python3
 
 def uniq_add(my_list=[]):
-    unique_intergers = set()
-    for element in my_list:
-        unique_intergers.add(element)
-        result = sum(unique_intergers)
-
-        return result
+    sum = 0
+    for i in set(my_list):
+        sum += i
+        return sum
