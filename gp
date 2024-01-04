@@ -1,0 +1,5 @@
+#!/bin/bash
+
+git add .
+git commit -m 'classes and objects'
+git push
