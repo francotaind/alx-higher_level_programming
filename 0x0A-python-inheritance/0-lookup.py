@@ -1,3 +1,5 @@
+#!/usr/bin/python3
+
 def lookup(obj):
     """
     Get list of available attributes and methods of an object
@@ -6,4 +8,4 @@ def lookup(obj):
     Returns:
     -A list containing names of attr and methods
     """
-    return[attr for attr in dir(obj) if not callable(getattr(obj, attr)) or callable(getattr(obj, attr)) and not attr.startswith("__")]
+    return(dir(obj))
