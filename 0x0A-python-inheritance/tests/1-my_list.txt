@@ -105,4 +105,3 @@ Checking None object
 
 >>> obj5.print_sorted()
 [None]
-
