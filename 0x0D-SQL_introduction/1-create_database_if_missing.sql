@@ -1,4 +1,4 @@
--- creates a database in mysql server
+-- creates a database in mysql server if it does not exist
 
-CREATE DATABASE hbtn_0c_0;
+CREATE DATABASE IF NOT EXISTS hbtn_0c_0;
 
