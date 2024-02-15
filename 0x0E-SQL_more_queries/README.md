@@ -11,9 +11,3 @@ The Seven Types of SQL Joins
 MySQL Tutorial
 SQL Style Guide
 MySQL 8.0 SQL Statement Syntax
-Extra resources around relational database model design:
-
-Design
-Normalization
-ER Modeling
-
