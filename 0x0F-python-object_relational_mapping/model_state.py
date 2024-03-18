@@ -1,4 +1,5 @@
 #!/usr/bin/python3
+
 """Module defining state class and base instance"""
 
 import sys
