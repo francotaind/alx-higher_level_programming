@@ -1,14 +1,24 @@
 #!/bin/bash
 
-# Check if URL argument is provided
+# Check if a URL argument is provided
 if [ -z "$1" ]; then
-    echo "Usage: $0 <URL>"
-    exit 1
+  echo "Error: Please provide a URL as an argument."
+  exit 1
 fi
 
-# Send request using curl and retrieve body size
-body_size=$(curl -sI "$1" | grep -i 'content-length' | awk '{print $2}' | tr -d '\r\n')
+# Extract the body of the response using curl with silent mode (-s) 
+# and store it in a variable
+response_body=$(curl -s "$1")
 
-# Display body size in bytes
-echo "$body_size"
+# Check for successful curl execution (exit code 0)
+if [ $? -ne 0 ]; then
+  echo "Error: curl failed to execute."
+  exit 1
+fi
+
+# Get the size of the body (in bytes) using string length
+body_size=${#response_body}
+
+# Display the body size
+echo "Body size: $body_size bytes"
 
