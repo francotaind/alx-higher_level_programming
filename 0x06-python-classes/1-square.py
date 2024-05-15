@@ -1,4 +1,5 @@
 #!/usr/bin/python3
+
 """
 A class of a square initializing a private instance
 """
